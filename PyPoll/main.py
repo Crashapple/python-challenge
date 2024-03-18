@@ -1,6 +1,6 @@
 import csv
 
-csv_file_path = r'C:\Users\april\Documents\April_Class\python-challenge\PyPoll\Resources\election_data.csv'
+csv_file_path = './Resources/election_data.csv'
 
 total_votes = 0 #used to tally the total number of votes
 candidates = [] #list of all individual candidates

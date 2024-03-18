@@ -1,7 +1,7 @@
 import csv
 
 #define csv file
-csv_file_path = r'C:\Users\april\Documents\April_Class\python-challenge\PyBank\Resources\budget_data.csv'
+csv_file_path = './Resources/budget_data.csv'
 
 num_rows = 0 #Total number of months
 profit_loss = 0 #calculate total profit loss
