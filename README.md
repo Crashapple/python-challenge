@@ -72,3 +72,4 @@ Raymon Anthony Doane: 3.139% (11606)
 Winner: Diana DeGette
 -------------------------
 
+Syntax help was received by online searches and peer discussions. 
