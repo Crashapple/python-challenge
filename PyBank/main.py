@@ -1,22 +1,25 @@
 import csv
 
+#define csv file
 csv_file_path = r'C:\Users\april\Documents\April_Class\python-challenge\PyBank\Resources\budget_data.csv'
 
-num_rows = 0
-profit_loss = 0
-monthly_diff = []
-month1 = 0
+num_rows = 0 #Total number of months
+profit_loss = 0 #calculate total profit loss
+monthly_diff = [] #list of monthly differences
+month1 = 0 
 month2 = 0
 sum_month_diff = 0
 greatest_inc = 0
 greatest_dec = 0
 
+#open csv file
 with open(csv_file_path) as csvfile:
 
     csv_reader = csv.reader(csvfile, delimiter=",")
 
     header = next(csv_reader)
 
+#loop through csv file to get number of months and profit loss
     for row in csv_reader:
 
         num_rows = num_rows + 1
@@ -41,6 +44,7 @@ with open(csv_file_path) as csvfile:
 
 profit_loss_ave = int(sum_month_diff)/int(len(monthly_diff))
 
+#print results to terminal
 print("Financial Analysis")
 
 print("-----------------------------------------------------")
@@ -57,6 +61,7 @@ print(f"Greatest Decrease in Profits: {greatest_dec_month} (${greatest_dec})")
 
 output_path = r'C:\Users\april\Documents\April_Class\python-challenge\PyBank\analysis\analysis_Pybank.csv'
 
+#create output file with results
 with open(output_path,'w') as csvfile2:
 
     csvwriter = csv.writer(csvfile2, delimiter = ',')
